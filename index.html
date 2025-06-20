@@ -14,7 +14,14 @@
       text-align: center;
       padding: 40px;
     }
-    .logo-emoji { font-size: 140px; margin-bottom: 20px; text-shadow: 0 0 20px #3b82f6; }
+    .logo-image {
+      width: 220px;
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px #3b82f6;
+      object-fit: cover;
+    }
     h1 { font-size: 34px; margin-bottom: 20px; }
     p { font-size: 18px; margin-bottom: 30px; }
     .btn {
@@ -29,13 +36,25 @@
       text-decoration: none;
     }
     .btn:hover { background: #2563eb; }
-    footer { margin-top: 40px; font-size: 14px; color: #ccc; }
-    .support-link { color: #3b82f6; text-decoration: none; }
-    .support-link:hover { text-decoration: underline; }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .support-link {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+    .support-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="logo-emoji">🚀</div>
+
+  <!-- Logo image -->
+  <img src="https://i.imgur.com/cyI57Dp.png" alt="ChartBotAIxTrade Robot" class="logo-image">
+
   <h1>chartbotaixtrade</h1>
   <p>Smart, Simple Trading for Everyone</p>
 
@@ -44,16 +63,16 @@
     Create Account & Start Trading
   </a>
 
-  <!-- OAuth login button with new Railway backend URL -->
+  <!-- OAuth login button -->
   <a class="btn" href="https://oauth.deriv.com/oauth2/authorize?app_id=76613&redirect_uri=https://chartbotaixtrade-production.up.railway.app/oauth_callback" target="_blank">
     Log in & Trade Now
   </a>
 
   <footer>
-    Need help? 📲 
-    <a class="support-link" href="https://t.me/+oKXfIOJCUEoxOTI0" target="_blank">
-      Contact Support on Telegram
-    </a>
+    ⚠️ <strong style="color:#f87171;">Risk Warning:</strong> Trading financial instruments such as forex and CFDs involves a high level of risk and may not be suitable for all investors. You may lose all your invested capital.
+    <br /><br />
+    <a class="support-link" href="terms.html">Terms of Use</a> | 
+    <a class="support-link" href="https://t.me/+oKXfIOJCUEoxOTI0" target="_blank">Contact Support</a>
   </footer>
 </body>
 </html>
